@@ -1,0 +1,10 @@
+import sqlite3
+conn=sqlite3.connect("MITMidmorning.db")
+print("OPen dtb succesfully")
+conn.execute("INSERT INTO Wanafunzi (ID,NAME,AGE,SCHOOL,GENDER)VALUES (1,'Antonia',17,'eMobilis','Female')")
+conn.execute("INSERT INTO Wanafunzi (ID,NAME,AGE,SCHOOL,GENDER)VALUES (2,'Jesse',24,'eMobilis','Male')")
+conn.execute("INSERT INTO Wanafunzi (ID,NAME,AGE,SCHOOL,GENDER)VALUES (3,'Muthoni',14,'eMobilis','Them')")
+conn.execute("INSERT INTO Wanafunzi (ID,NAME,AGE,SCHOOL,GENDER)VALUES (4,'Adrian',44,'eMobilis','Male')")
+conn.commit()
+print("Records succesfully added")
+conn.close()
